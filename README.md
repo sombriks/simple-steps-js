@@ -1,2 +1,5 @@
 # simple-steps-js
-library to execute functions at a given interval
+
+browser library to execute functions at a given interval
+
+ work in progress
