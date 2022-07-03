@@ -32,8 +32,13 @@ export class Steps {
   onFinish(fn) {
     fn(this)
   }
-  add(step) { }
-  remove(i) { }
+  add(step, i) {
+    if (!i) this.queue.push(step)
+    else this.queue.splice(i, 0, step)
+  }
+  remove(i) {
+    this.queue.splice(i, 1)
+  }
 }
 
 Steps.noop = () => { }

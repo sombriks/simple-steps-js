@@ -4,4 +4,20 @@
 
 browser library to execute functions at a given interval
 
- work in progress
+## usage
+
+```js
+import { Steps } from "simple-steps-js"
+
+const steps = new Steps({
+  replay: true,
+  queue:[
+    () => console.log("in"),
+    Steps.noop,
+    () => console.log("out"),
+    Steps.noop
+  ]
+})
+
+steps.start()
+```
