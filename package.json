@@ -1,7 +1,7 @@
 {
   "name": "simple-steps-js",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "library to execute functions at a given interval",
   "main": "index.js",
   "scripts": {
